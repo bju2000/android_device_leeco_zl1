@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
-    audio.primary.msm8952 \
+    audio.primary.msm8996 \
     audio.r_submix.default \
     audio.usb.default \
     libqcompostprocbundle \
@@ -106,10 +106,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    copybit.msm8952 \
-    gralloc.msm8952 \
-    hwcomposer.msm8952 \
-    memtrack.msm8952 \
+    copybit.msm8996 \
+    gralloc.msm8996 \
+    hwcomposer.msm8996 \
+    memtrack.msm8996 \
     liboverlay
 
 # Fingerprint
@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
     xtwifi.conf
 
 PRODUCT_PACKAGES += \
-    gps.msm8952
+    gps.msm8996
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -155,11 +155,11 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    keystore.msm8952
+    keystore.msm8996
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8952
+    lights.msm8996
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -207,12 +207,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Sensors
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf \
-    $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf
-
 PRODUCT_PACKAGES += \
-    sensors.msm8952
+    sensors.msm8996
 
 # Snapdragon Camera
 PRODUCT_PACKAGES += \
